@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column Preview Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #F2F2F2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .maincontainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            padding: 0;
+            width: 800px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .cards{
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px 28px 20px 38px;
+            width: 250px;
+
+        }
+        .cards h2, .cards p{
+            color: #EEF3F6;
+            margin-top: 40px;
+
+        }
+        .cards button{
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 0;
+            margin-top: 100px;
+            background-color: #F0F3F2;
+        }
+        .card-1 button{
+            color: #E28525;
+        }
+        .card-2 button{
+            color: #016972;
+        }
+        .card-3 button{
+            color: #00403F;
+
+        }
+        .card-1{
+            background-color: #E28525;
+
+        }
+        .card-2{
+            background-color: #016972;
+        }
+        .card-3{
+            background-color: #00403F;
+        }
+        .cards .icons-main{
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            flex-direction: row;
+            width: 200px;
+            gap: 30px;
+        }
+        .cards .icons-main .icon{
+            background-color: #00403F;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+        }
+        .card-1 .icons-main .icon-1{
+            background-color: #B36B1E;
+            border-radius: 100%;
+        }
+        .card-1 .icons-main .icon-2{
+            background-color: #F7D96D;
+            margin-left: -38px;
+        }
+        .card-2 .icons-main .icon-1{
+            background-color: #00555A;
+            border-radius: 100%;
+        }
+        .card-2 .icons-main .icon-2{
+            background-color: #27B6C3;
+            margin-left: -38px;
+        }
+        .card-3 .icons-main .icon-1{
+            background-color: #003432;
+            border-radius: 100%;
+        }
+        .card-3 .icons-main .icon-2{
+            background-color: #17BC9E;
+            margin-left: -38px;
+        }
+        @media (max-width: 768px){
+            .maincontainer{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 0;
+                width:fit-content;
+                height: fit-content;
+                margin-left: 50px;
+                margin-right: 50px;
+        }
+            .cards{
+                height: 250px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 40px 28px 20px 38px;
+                width: 280px;
+            }
+            .cards h2, p{
+                margin-top: 20px;
+            }
+            .cards button{
+                margin-top: 20px
+            }
+            .cards .icons-main{
+                margin-left: -46px;
+            }
+            body{
+                height:fit-content;
+                padding-top: 100px;
+                padding-bottom: 100px;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="cards card-1">
+            <div class="icons-main">
+                <div class="icon icon-1"></div>
+                <div class="icon icon-2"></div>
+            </div>
+            <div class="content">
+                <h2>SEDANS</h2>
+                <P>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip. </P>
+                <button class="LearnMore">Learn More</button>
+            </div>
+
+        </div>
+        <div class="cards card-2">
+            <div class="icons-main">
+                <div class="icon icon-1"></div>
+                <div class="icon icon-2"></div>
+            </div>
+            <div class="content">
+                <h2>SUVS</h2>
+                <P>Take ajn SUV for its spacious interior, power and versatility. Perfect for your next family vacation and off road adventures. </P>
+                <button class="LearnMore">Learn More</button>
+            </div>
+        </div>
+        <div class="cards card-3">
+            <div class="icons-main">
+                <div class="icon icon-1"></div>
+                <div class="icon icon-2"></div>
+            </div>
+            <div class="content">
+                <h2>LUXURY</h2>
+                <P>Cruise in the best car brands without the bloated prices. Enjoy the enhance comfort of the luxury rental and arrive in style. </P>
+                <button class="LearnMore">Learn More</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

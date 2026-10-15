@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Preview Card</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: #F5D04E;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+        .main-card{
+            width: 400px;
+            background-color: white;
+            order: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 10px 20px 10px;
+            border-radius: 20px;
+            box-shadow: 8px 8px 0 #000;
+            transition: transform  0.7s ease;
+        }
+        .main-card:hover{
+            transform: scale(1.1);
+            
+        }
+        .main-card .image img{
+            width: 350px;
+            border-radius: 20px;
+            transition: transform  0.7s ease;
+        }
+        .main-card:hover .image img{
+            transform: scale(1.03);
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            padding: 10px 20px 20px 30px;
+        }
+        .content button{
+            background-color: #F5D04E;
+            border: 2px solid #F5D04E;
+            padding: 5px 10px;
+            color:black;
+            font-weight: 600;
+        }
+        .content h1{
+            font-size: 29px;
+            margin-top: -3px;
+
+        }
+        .content p{
+            text-align: left;
+            
+        }
+        .content .description{
+            margin-top: 3px;
+        }
+        .made-by{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            width: 300px;
+            margin-top: -5px;
+        }
+        .made-by img{
+            width: 20px;
+            height: 20px;
+            margin-top: 22px;
+
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="main-container">
+        <div class="main-card">
+            <div class="image">
+                <img src="/BlogPreviewCard/{878394A2-8798-4D16-9602-EB62CB0C2BD6}.png.jpg" alt="yellow bafcground image">
+            </div>
+            <div class="content">
+                <button>Learning</button>
+                <p>Published 21 Dec 2023</p>
+                <h1>HTML & CSS Foundations</h1>
+                <p class="description">These language are the backbone of every website, defining structure content and presentation.</p>
+                <div class="made-by">
+                    <img src="/BlogPreviewCard/1788967382185.png" alt="profile">
+                    <h6>Greg Hooper</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
